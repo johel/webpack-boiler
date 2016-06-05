@@ -54,8 +54,11 @@
     "webpack-validator": "^2.1.1"
   },
   "dependencies": {
+    "bootstrap": "^3.3.6",
+    "file-loader": "^0.8.5",
     "react": "^15.1.0",
     "react-bootstrap": "^0.29.4",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "url-loader": "^0.5.7"
   }
 }

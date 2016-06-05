@@ -1,5 +1,10 @@
-/*@import './styles/bootstrap3-3-5.css';*/
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import './styles/test.css';
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 html, body{
 	padding:0px;
