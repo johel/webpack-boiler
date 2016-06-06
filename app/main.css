@@ -1,9 +1,9 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import './styles/test.css';
+@import './styles/custom-bootstrap.css';
 
 
 *, *:before, *:after {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 *, html, body, {
@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: cornsilk;
+  background-color: #eaeaea;
   font-family: sans-serif;
 }
 
@@ -29,6 +29,10 @@ body {
 	width:90px;
 	height:50px;
 	float:left;
+}
+
+.nav-logo{
+	margin-top: 18px;
 }
 
 .top-menu{

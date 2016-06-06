@@ -1,0 +1,62 @@
+body{
+}
+
+
+/**********************************************************************************
+						Changing bootstrap navigation items default
+***********************************************************************************/
+.nav{
+	height:49px;
+}
+
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+}
+
+.nav>li{
+	text-align: center;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #3f4f62;
+}
+
+.nav .open>a:focus, .nav .open>a:hover {
+    background-color: #3f4f62;
+    border-color: #337ab7;
+}
+
+.navbar-top-links {
+    margin-right: 0;
+}
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.dropdown, .dropdown>a{
+	height:inherit;
+}
+
+.dropdown>a{
+	display:flex !important;
+	align-items: center;
+}
+
+
+.dropdown-toggle .caret, .dropdown-toggle .glyphicon{
+	color:white;
+}
+
+/*dropdown*/
+.dropdown-menu>li, .dropdown-menu>li a{
+	width:100%;
+}
+
+.dropdown-menu>li a{
+	text-decoration:none;
+	color:black;
+}
