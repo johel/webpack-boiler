@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #eaeaea;
+  /*background-color: #eaeaea;*/
   font-family: sans-serif;
 }
 
@@ -41,6 +41,21 @@ body {
 
 
 
+/**********************************************************************************
+														body-wrapper     hover:#3f4f62;
+***********************************************************************************/
+
+.body-wrapper{
+	margin-top: -1px;
+	width:100%;
+	background-color:#364150;
+	min-height:100vh;
+}
+
+.content-wrapper{
+	/*float:right;*/
+	background-color:#eef1f5;
+}
 
 
 /**********************************************************************************
@@ -48,8 +63,8 @@ body {
 ***********************************************************************************/
 
 .page-sidebar-wrapper{
-	margin-top: -1px;
-	background-color:#364150 ;
+	
+	
 }
 
 .page-sidebar-menu{
@@ -127,9 +142,85 @@ body {
 
 
 @media(min-width:768px) {
-    .page-sidebar-wrapper {
-        z-index: 1;
-        position: absolute;
-        width: 235px;
-    }
+  .page-sidebar-wrapper {
+      z-index: 1;
+      position: absolute;
+      width: 235px;
+      float:left;
+  }
+
+  .content-wrapper{
+		margin-left:235px;
+	}
+
+}
+
+
+/**********************************************************************************
+														statistics
+***********************************************************************************/
+
+.dashboard-stat2, .dashboard-stat2 .display {
+    margin-bottom: 20px;
+}
+
+.dashboard-stat2{
+  background: #fff;
+  padding: 15px 15px 30px;
+}
+
+.dashboard-stat2 .progress-info .progress {
+  margin: 0;
+  height: 4px;
+  clear: both;
+  display: block;
+}
+
+.dashboard-stat2 .progress-info .status {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #AAB5BC;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dashboard-stat2 .progress-info .status .status-title {
+    float: left;
+    display: inline-block;
+}
+
+.dashboard-stat2 .progress-info .status .status-number {
+    float: right;
+    display: inline-block;
+}
+
+.dashboard-stat2 .display .number small {
+    font-size: 14px;
+    color: #AAB5BC;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dashboard-stat2 .display .number h3 {
+    margin: 0 0 2px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.font-green-sharp {
+    color: #2ab4c0!important;
+}
+
+.dashboard-stat2 .display .number h3>small {
+    font-size: 23px;
+}
+
+.progress-bar.green-sharp {
+    background: #2ab4c0!important;
+    color: #FFF!important;
 }
