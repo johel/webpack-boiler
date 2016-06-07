@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from 'react-bootstrap';
+import ProgressStat from './components/stat-progress.js'
 
 export default class header extends Component{
 	render(){
@@ -82,59 +83,19 @@ export default class header extends Component{
 							<div className="row">
 
 								<div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-									<div className="dashboard-stat2 ">
-										<div className="display">
-											<div className="number">
-												<h3 className="font-green-sharp">
-													<small className="font-green-sharp">R$</small>
-													<span data-counter="counterup" data-value="7800">7800</span>
-												</h3>
-												<small>TOTAL PROFIT</small>
-											</div>
-											<div className="icon">
-												<i className="icon-pie-chart"></i>
-											</div>
-										</div>
-										<div className="progress-info">
-											<div className="progress">
-												<span style={ {width: '76%'} } className="progress-bar progress-bar-success green-sharp">
-													<span className="sr-only">76% progress</span>
-												</span>
-											</div>
-											<div className="status">
-												<div className="status-title"> progress </div>
-												<div className="status-number"> 76% </div>
-											</div>
-										</div>
-									</div>
+									<ProgressStat />
 								</div>
 
 								<div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-									<div className="dashboard-stat2 ">
-										<div className="display">
-											<div className="number">
-												<h3 className="font-green-sharp">
-												<span data-counter="counterup" data-value="7800">7800</span>
-												<small className="font-green-sharp">$</small>
-												</h3>
-												<small>TOTAL PROFIT</small>
-											</div>
-											<div className="icon">
-												<i className="icon-pie-chart"></i>
-											</div>
-										</div>
-										<div className="progress-info">
-											<div className="progress">
-												<span style={ {width: '76%'} } className="progress-bar progress-bar-success green-sharp">
-													<span className="sr-only">76% progress</span>
-												</span>
-											</div>
-											<div className="status">
-												<div className="status-title"> progress </div>
-												<div className="status-number"> 76% </div>
-											</div>
-										</div>
-									</div>
+									<ProgressStat />
+								</div>
+
+								<div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+									<ProgressStat />
+								</div>
+
+								<div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+									<ProgressStat />
 								</div>
 
 							</div>
